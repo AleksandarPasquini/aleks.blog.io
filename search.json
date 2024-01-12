@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Welcome! This blog is written with Quarto. I will be hopefully making one post a week about something that grabs my interest. I hope my writing skills will improve over time!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Antifragile Mind",
+    "section": "",
+    "text": "First Blog Post\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\n\n\nJan 12, 2024\n\n\nAleksandar Pasquini\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nsocial\n\n\n\n\n\n\n\n\n\nJan 12, 2024\n\n\nAleksandar Pasquini\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Aleksandar Pasquini",
+    "section": "",
+    "text": "Hello Internet! I am Aleksandar Pasquini, a PhD Student at Deakin Uni. This blog is mainly to improve my writing skills!"
+  },
+  {
+    "objectID": "about.html#about-this-blog",
+    "href": "about.html#about-this-blog",
+    "title": "Aleksandar Pasquini",
+    "section": "",
+    "text": "Hello Internet! I am Aleksandar Pasquini, a PhD Student at Deakin Uni. This blog is mainly to improve my writing skills!"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "First Blog Post",
+    "section": "",
+    "text": "Hello Internet!"
+  }
+]
