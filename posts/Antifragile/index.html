@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Aleksandar Pasquini">
+<meta name="dcterms.date" content="2024-02-16">
 
-<title>The Antifragile Mind</title>
+<title>The Antifragile Mind - Antifragile - A Theoretical Lens</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +68,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">The Antifragile Mind</span>
     </a>
   </div>
@@ -149,7 +91,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">Aleksandar Pasquini</span></a>
   </li>  
   <li class="nav-item">
@@ -172,278 +114,58 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">The Antifragile Mind</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Antifragile - A Theoretical Lens</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Philosophy</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Aleksandar Pasquini </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 16, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="GPT">GPT <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Philosophy">Philosophy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Transformer">Transformer <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(2)</span></div><div class="category" data-category="social">social <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p><img src="ANTIFRAGILE.png" class="img-fluid"></p>
+<p>At the beginning of my PhD, my supervisor recommended me to read a book by Nassim Nicholas Taleb called. “Antifragile: Things That Gain from Disorder”. I really enjoyed this book and I encourage others to also read it. The book defines the concept of antifragility, which is a property of systems that benefit from shocks, volatility, and disorder. This is in contrast to the two other kinds of systems; efficent and redundant.</p>
+<p>But what is an antifragile system? Imagine a robot designed with advanced artificial intelligence and self-repair capabilities. This robot, when encountering physical damage or operational failures, doesn’t just repair itself to its original state; it analyzes the cause of the damage and reconfigures or upgrades itself to be more resistant to similar issues in the future. Each breakdown leads to an enhancement, making the robot more capable and versatile over time. This robot exemplifies antifragility.</p>
+<p>However, antifragile systems are very rare. Instead when we build systems, we choose to make efficient systems. We do this because efficient systems are designed for maximum productivity with minimal cost. Unpredictable or unforeseen events, also known as “Black Swans”, can have extreme consequences on efficient systems. A quintessential and recent example of a Black Swan event is the COVID-19 pandemic’s impact on global supply chains. Prior to the pandemic, many companies operated on a ‘just-in-time’ manufacturing principle. This system, highly efficient under normal circumstances, relies on the timely and predictable delivery of supplies to keep inventory costs low and operations lean.</p>
+<p>However, the onset of the pandemic disrupted this system profoundly. Border closures, lockdowns, and the halt of production in key supplier countries led to severe delays and shortages. Companies that had minimized their inventory and relied on a small number of suppliers for cost efficiency found themselves unable to meet demand or continue production. The lack of flexibility in their supply chain, a byproduct of their efficiency optimization, rendered them incapable of dealing with such an unprecedented disruption.</p>
+<p>The final form of a system is a redundant system. A twin-engine airplane is a system that incorporates redundancy for safety. The presence of two engines means that if one fails, the other can keep the plane flying. This redundancy enhances the robustness of the airplane, ensuring it can withstand the failure of one engine without crashing. However, the plane doesn’t improve or adapt as a result of an engine failure; it simply continues to function at a reduced capacity. The redundancy provides a safety net, but unlike the antifragile robot, the system doesn’t evolve or improve from the stressor.</p>
+<p>I am glad that I read Talab’s book early in my PhD journey. The idea of antifragility can be used in many areas of life and I try to incorporate it by embracing variability and adapting from failures. I see many of the most successful products and systems have antifragile concepts in them. Large Language Models (LLMs) like GPT-4, learn from the users. Each interaction, whether a success or a failure, feeds into the system, enhancing their ability to understand and respond to complex language queries. They don’t merely resist errors; they use the human feedback from them as fuel to grow more sophisticated and capable. This synergy of human and machine learning exemplifies the true power of antifragility – turning the chaos of the unknown into the catalyst for progress and discovery.</p>
+<p>“Not seeing a tsunami or an economic event coming is excusable; building something fragile to them is not.” ― Nassim Nicholas Taleb</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Philosophy" data-listing-date-sort="1708002000000" data-listing-file-modified-sort="1708060596000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="578">
-<div class="thumbnail">
-<p><a href="./posts/Antifragile/index.html" class="no-external"></a></p><a href="./posts/Antifragile/index.html" class="no-external">
-<p><img src="./posts/Antifragile/ANTIFRAGILE.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/Antifragile/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Antifragile/index.html" class="no-external">Antifragile - A Theoretical Lens</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Antifragile/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Philosophy'); return false;">
-Philosophy
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Antifragile/index.html" class="no-external">At the beginning of my PhD, my supervisor recommended me to read a book by Nassim Nicholas Taleb called. “Antifragile: Things That Gain from Disorder”. I really enjoyed this…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Antifragile/index.html" class="no-external">
-<div class="listing-date">
-Feb 16, 2024
-</div>
-<div class="listing-author">
-Aleksandar Pasquini
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Transformer" data-listing-date-sort="1707397200000" data-listing-file-modified-sort="1707464412000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="580">
-<div class="thumbnail">
-<p><a href="./posts/Transformer_Architecture/index.html" class="no-external"></a></p><a href="./posts/Transformer_Architecture/index.html" class="no-external">
-<p><img src="./posts/Transformer_Architecture/Transformer.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/Transformer_Architecture/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Transformer_Architecture/index.html" class="no-external">Transformer Architecture</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Transformer_Architecture/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Transformer'); return false;">
-Transformer
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Transformer_Architecture/index.html" class="no-external">Today there is lots of hype around AI. This is driven by new AL models and most of them are built off the transformer architecture. But what is a transformer model and what…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Transformer_Architecture/index.html" class="no-external">
-<div class="listing-date">
-Feb 9, 2024
-</div>
-<div class="listing-author">
-Aleksandar Pasquini
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="GPT" data-listing-date-sort="1706792400000" data-listing-file-modified-sort="1706852340000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1935">
-<div class="thumbnail">
-<p><a href="./posts/Defending_Jail_Break_Prompts/index.html" class="no-external"></a></p><a href="./posts/Defending_Jail_Break_Prompts/index.html" class="no-external">
-<p><img src="./posts/Defending_Jail_Break_Prompts/jailbreak.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/Defending_Jail_Break_Prompts/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Defending_Jail_Break_Prompts/index.html" class="no-external">Defending Against GPT Jailbreak Prompts</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Defending_Jail_Break_Prompts/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('GPT'); return false;">
-GPT
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Defending_Jail_Break_Prompts/index.html" class="no-external">Hello Internet! This week I listened to a very interesting presentation from an intern at A2I2 about Jailbreaking GPTs and how to defend against them, Inspired by this I…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Defending_Jail_Break_Prompts/index.html" class="no-external">
-<div class="listing-date">
-Feb 2, 2024
-</div>
-<div class="listing-author">
-Aleksandar Pasquini
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="GPT,code" data-listing-date-sort="1706274000000" data-listing-file-modified-sort="1706324354000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="763">
-<div class="thumbnail">
-<p><a href="./posts/GPT-4_vs_Humans_Summarisation-2/index.html" class="no-external"></a></p><a href="./posts/GPT-4_vs_Humans_Summarisation-2/index.html" class="no-external">
-<p><img src="./posts/GPT-4_vs_Humans_Summarisation-2/HumansVsGPT.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/GPT-4_vs_Humans_Summarisation-2/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/GPT-4_vs_Humans_Summarisation-2/index.html" class="no-external">Are GPTs better at summaries than Humans? Part 2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/GPT-4_vs_Humans_Summarisation-2/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('GPT'); return false;">
-GPT
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/GPT-4_vs_Humans_Summarisation-2/index.html" class="no-external">Hello Internet! Today I am going to follow up my first experiment. My last experiment studied the summarisation abilities of GTP-4 vs Humans but the evaluation what does…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/GPT-4_vs_Humans_Summarisation-2/index.html" class="no-external">
-<div class="listing-date">
-Jan 27, 2024
-</div>
-<div class="listing-author">
-Aleksandar Pasquini
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="GPT" data-listing-date-sort="1705582800000" data-listing-file-modified-sort="1706322158000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1127">
-<div class="thumbnail">
-<p><a href="./posts/GPT-4_vs_Humans_Summarisation/index.html" class="no-external"></a></p><a href="./posts/GPT-4_vs_Humans_Summarisation/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/GPT-4_vs_Humans_Summarisation/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/GPT-4_vs_Humans_Summarisation/index.html" class="no-external">Are GPTs better at summaries than Humans?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/GPT-4_vs_Humans_Summarisation/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('GPT'); return false;">
-GPT
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/GPT-4_vs_Humans_Summarisation/index.html" class="no-external">Hello Internet! Today I want to test the summarisation powers of GTP-4, specifically ScholarAI. There has been a lot of marketing around ScholarAI’s ability to summarise…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/GPT-4_vs_Humans_Summarisation/index.html" class="no-external">
-<div class="listing-date">
-Jan 19, 2024
-</div>
-<div class="listing-author">
-Aleksandar Pasquini
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="code" data-listing-date-sort="1704978000000" data-listing-file-modified-sort="1705043838000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/post-with-code/index.html" class="no-external"></a></p><a href="./posts/post-with-code/index.html" class="no-external">
-<p><img src="./posts/post-with-code/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/post-with-code/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-with-code/index.html" class="no-external">First Blog Post</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post-with-code/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post-with-code/index.html" class="no-external">Hello Internet!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html" class="no-external">
-<div class="listing-date">
-Jan 12, 2024
-</div>
-<div class="listing-author">
-Aleksandar Pasquini
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="social" data-listing-date-sort="1704978000000" data-listing-file-modified-sort="1705043676000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<p class="card-img-top"><img src="posts\welcome\thumbnail.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Welcome To My Blog</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('social'); return false;">
-social
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external">Welcome! This blog is written with Quarto. I will be hopefully making one post a week about something that grabs my interest. I hope my writing skills will improve over time!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Jan 12, 2024
-</div>
-<div class="listing-author">
-Aleksandar Pasquini
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
